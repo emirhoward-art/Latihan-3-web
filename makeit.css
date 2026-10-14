@@ -1,0 +1,57 @@
+/* Reset margin default browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Styling untuk elemen div konten */
+div {
+  background-color: #FFF4A3;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+/* Header Container */
+header {
+  background-color: #ffe6cc; /* Warna background header */
+  padding: 15px 30px;
+  color: white;
+  
+  /* Flexbox utama untuk menyusun Logo dan Navigasi secara horizontal */
+  display: flex;
+  align-items: center; /* Sejajar secara vertikal di tengah */
+  gap: 1000px; /* Jarak antara logo dan navigasi */
+}
+
+/* Logo Bentuk Lingkaran */
+.logo {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%; /* Mengubah kotak menjadi lingkaran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* Navigasi Horizontal */
+nav ul {
+  display: flex; /* Menyusun menu Home, Service, dll secara horizontal */
+  list-style: none; /* Menghilangkan titik bullet list */
+  gap:20px; /* Jarak antarmenu */
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Menghilangkan garis bawah link */
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8; /* Efek warna saat kursor menempel */
+}
