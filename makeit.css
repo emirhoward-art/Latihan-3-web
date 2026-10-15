@@ -2,6 +2,7 @@
 body { margin: 10px; color: #111; font: 14px Arial, sans-serif; }
 a { color: inherit; text-decoration: none; }
 
+/* Flexbox menyusun menu, kolom konten, dan baris input. */
 .header, .menu, .service-columns, .about-columns, .form-row {
   display: flex;
 }
@@ -17,6 +18,7 @@ a { color: inherit; text-decoration: none; }
 }
 .menu { margin-top: 40px; gap: 15px; font-size: 12px; }
 
+/* Warna dan tinggi blok utama mengikuti wireframe. */
 .hero {
   height: 210px; display: grid; place-items: center;
   background: #d9e7fb; border: 1px solid #5594ff; font-size: 12px;
@@ -34,6 +36,7 @@ a { color: inherit; text-decoration: none; }
   background: #d8ead5; border: 1px solid #73bd68;
 }
 
+/* Badge dan kolom membentuk isi Services dan About. */
 .badge {
   width: 106px; height: 56px; margin: 0 auto;
   display: grid; place-items: center;
@@ -52,6 +55,7 @@ h2 { margin: 0 0 14px; font-size: 24px; }
   width: 150px; height: 70px;
 }
 
+/* Ukuran input dan tombol membentuk formulir Contact. */
 .contact .badge { width: 120px; height: 60px; }
 .form { margin-top: 9px; }
 .form-row { gap: 26px; }
@@ -73,6 +77,7 @@ button {
   background: #ffe8cf; border: 1px solid orange; font-size: 12px;
 }
 
+/* Pada layar kecil, kolom disusun vertikal agar muat di layar. */
 @media (max-width: 480px) {
   body { margin: 6px; }
   .header { padding: 9px 15px; }
