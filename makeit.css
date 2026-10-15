@@ -1,57 +1,87 @@
-/* Reset margin default browser */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+* { box-sizing: border-box; }
+body { margin: 10px; color: #111; font: 14px Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
 
-/* Styling untuk elemen div konten */
-div {
-  background-color: #FFF4A3;
-  padding: 15px;
-  margin: 20px 0;
-}
-
-/* Header Container */
-header {
-  background-color: #ffe6cc; /* Warna background header */
-  padding: 15px 30px;
-  color: white;
-  
-  /* Flexbox utama untuk menyusun Logo dan Navigasi secara horizontal */
+.header, .menu, .service-columns, .about-columns, .form-row {
   display: flex;
-  align-items: center; /* Sejajar secara vertikal di tengah */
-  gap: 1000px; /* Jarak antara logo dan navigasi */
 }
-
-/* Logo Bentuk Lingkaran */
+.header {
+  height: 80px; padding: 9px 30px 9px 48px;
+  align-items: center; justify-content: space-between;
+  background: #ffe8cf; border: 1px solid orange;
+}
 .logo {
-  width: 70px;
-  height: 70px;
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 50%; /* Mengubah kotak menjadi lingkaran */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #0f172a;
+  width: 61px; height: 61px; display: grid; place-items: center;
+  border: 1px solid; border-radius: 50%; background: white;
+  font-size: 12px;
+}
+.menu { margin-top: 40px; gap: 15px; font-size: 12px; }
+
+.hero {
+  height: 210px; display: grid; place-items: center;
+  background: #d9e7fb; border: 1px solid #5594ff; font-size: 12px;
+}
+.services {
+  height: 230px; padding: 22px 54px 20px;
+  background: #fff2cb; border: 1px solid #f0c54a;
+}
+.about {
+  height: 280px; padding: 29px 64px 20px;
+  background: #e4d7e9; border: 1px solid #bd9ac5;
+}
+.contact {
+  height: 240px; padding: 19px 49px 8px;
+  background: #d8ead5; border: 1px solid #73bd68;
 }
 
-/* Navigasi Horizontal */
-nav ul {
-  display: flex; /* Menyusun menu Home, Service, dll secara horizontal */
-  list-style: none; /* Menghilangkan titik bullet list */
-  gap:20px; /* Jarak antarmenu */
+.badge {
+  width: 106px; height: 56px; margin: 0 auto;
+  display: grid; place-items: center;
+  border: 1px solid; border-radius: 10px; background: white;
+  font-size: 12px;
+}
+.service-columns { gap: 40px; margin-top: 26px; }
+.service-columns > div, .about-columns > div { flex: 1; }
+h2 { margin: 0 0 14px; font-size: 24px; }
+.service-columns p, .about p {
+  margin: 0; font-size: 12px; line-height: 1.2;
+}
+.about-intro { margin: 29px 0 21px !important; text-align: center; }
+.about-columns { gap: 50px; }
+.wave {
+  width: 150px; height: 70px;
 }
 
-nav a {
-  color: rgb(0, 0, 0);
-  text-decoration: none; /* Menghilangkan garis bawah link */
-  font-weight: 500;
+.contact .badge { width: 120px; height: 60px; }
+.form { margin-top: 9px; }
+.form-row { gap: 26px; }
+input {
+  width: 50%; height: 21px;
+  border: 1px solid; border-radius: 4px; background: white;
+}
+textarea {
+  width: 100%; height: 71px; margin-top: 19px; display: block;
+  border: 1px solid; border-radius: 10px; background: white; resize: none;
+}
+button {
+  width: 113px; height: 22px; margin: 9px 0 0 2px; padding: 0;
+  border: 0; border-radius: 4px; background: #0750ed;
+  color: white; font-size: 12px;
+}
+.footer {
+  height: 50px; display: grid; place-items: center;
+  background: #ffe8cf; border: 1px solid orange; font-size: 12px;
 }
 
-nav a:hover {
-  color: #38bdf8; /* Efek warna saat kursor menempel */
+@media (max-width: 480px) {
+  body { margin: 6px; }
+  .header { padding: 9px 15px; }
+  .menu { gap: 8px; font-size: 11px; }
+  .services, .about, .contact { height: auto; }
+  .services { padding: 22px 24px 28px; }
+  .service-columns, .about-columns { flex-direction: column; gap: 20px; }
+  .about { padding: 25px 24px 30px; }
+  .contact { padding: 19px 24px 10px; }
+  .form-row { flex-direction: column; gap: 12px; }
+  input { width: 100%; }
 }

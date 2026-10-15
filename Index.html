@@ -1,35 +1,60 @@
 <!DOCTYPE html>
+<html lang="id">
 <head>
-
-  <title>Desain Web</title>
-  
-  <!-- Menghubungkan ke file CSS eksternal -->
   <link rel="stylesheet" href="makeit.css">
 </head>
 <body>
-
-  <header>
-    <!-- Logo Lingkaran di Sisi Kiri -->
+  <div class="header" id="home">
     <div class="logo">Logo</div>
-
-    <!-- Teks Navigasi Horizontal tepat di sebelah kanan logo -->
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div>
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-    <p>London has over 9 million inhabitants.</p>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 
-  <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+  <div class="hero">Hero (Image, Slogan, Kontak, dll)</div>
 
+  <div class="services" id="services">
+    <div class="badge">Services</div>
+    <div class="service-columns">
+      <div><h2>Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p></div>
+      <div><h2>Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p></div>
+      <div><h2>Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p></div>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="badge">About</div>
+    <p class="about-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    <div class="about-columns">
+      <div><h2>Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+      <div><h2>Performance</h2>
+        <svg class="wave" viewBox="0 0 220 100" xmnls="http://www.w3.org/2000/svg">
+        <path d="M 5 20
+        C 40 42, 65 42, 100 22
+        C 135 0, 165 0, 215 20
+        L 215 80
+        C 175 58, 145 58, 115 78
+        C 80 100, 45 100, 5 80
+        Z" fill="white" stroke="black" stroke-width="1.5"/>
+      </svg></div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="badge">Contact</div>
+    <div class="form">
+      <div class="form-row">
+        <input type="text" aria-label="Nama">
+        <input type="email" aria-label="Email">
+      </div>
+      <textarea aria-label="Pesan"></textarea>
+      <button type="button">Kirim</button>
+    </div>
+  </div>
+
+  <div class="footer">Footer</div>
 </body>
 </html>
